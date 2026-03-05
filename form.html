@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../Styles/form.css" />
+  </head>
+  <body>
+    <div class="contain">
+      <header>
+        <img
+          src="../images/logo_black.png"
+          alt="Casla Fashions logo"
+          width="150px"
+          height="100px"
+          class="head"
+        />
+
+        <nav>
+          <ul class="navigate">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Apply here</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <main>
+      <h4>Job Application area</h4>
+      <form>
+        <div>
+          <label for="fullname">Full Name<span>*</span></label>
+          <input
+            id="fullname"
+            name="person"
+            type="text"
+            placeholder="e.g John Doe..."
+            required
+          />
+        </div>
+
+        <div>
+          <label for="d.o.b">Date of birth</label>
+          <input id="d.o.b" type="date" required />
+        </div>
+
+        <div>
+          <label>Gender<span>*</span></label>
+          <label
+            ><input type="radio" name="gender" value="female" />Female</label
+          >
+          <label><input type="radio" name="gender" value="male" />Male</label>
+        </div>
+
+        <div>
+          <label for="email">Email address<span>*</span></label>
+          <input
+            id="email"
+            type="email"
+            placeholder="myname@example.com"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="contact">Phone Number<span>*</span></label>
+          <input
+            id="contact"
+            type="tel"
+            placeholder="(+256) 700000000"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="address">Address<span>*</span></label>
+          <input id="address" type="text" />
+        </div>
+
+        <div>
+          <label>Applied Position<span>*</span></label>
+          <input type="text" required />
+        </div>
+
+        <div>
+          <label for="edu">Highest Level of Education<span>*</span></label>
+          <select>
+            <option value="">Choose</option>
+            <option value="UCE">Uganda Certificate of Education (UCE)</option>
+            <option value="UACE">
+              Uganda Advanced Certificate of Education (UACE)
+            </option>
+            <option value="Certificate">Higher Education Certificate</option>
+            <option value="Diploma">National Diploma</option>
+            <option value="Bachelor's">Bachelor's degree</option>
+            <option value="Post">Postgraduate Diploma</option>
+            <option value="PHD">Master's/ Phd</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Years of experience<span>*</span></label>
+          <input type="number" required />
+        </div>
+
+        <div>
+          <label for="amount">Expected pay<span>*</span></label>
+          <input
+            id="amount"
+            type="number"
+            name="amount"
+            minlength="5"
+            placeholder="Enter Amount"
+          />
+        </div>
+
+        <div>
+          <label>Upload CV/Resume<span>*</span></label>
+          <input class="file" type="file" required />
+        </div>
+
+        <div>
+          <label>Upload Passport photo<span>*</span></label>
+          <input class="file" type="file" required />
+        </div>
+
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </main>
+    <footer class="site">
+      <div class="footers">
+        <h3>Casla Fashion House</h3>
+        <p>Where style meets affordability!</p>
+      </div>
+
+      <div class="footers">
+        <h3>Follow Us</h3>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-envelope"></i> info@caslafashions.com</p>
+        <p><i class="fas fa-phone"></i> +256 767005048</p>
+        <p><i class="fas fa-map-marker-alt"></i> Wakiso, Uganda</p>
+      </div>
+      <div class="footer">
+        <nav class="navigate">
+          <a href="index.html">Home</a>
+          <a href="form.html">Apply Here</a>
+          <a href="gallery.html">Gallery</a>
+        </nav>
+      </div>
+      <p class="copyright">&copy; 2026 Casla Fashions. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

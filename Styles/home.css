@@ -1,0 +1,123 @@
+body {
+   background-color: rgb(162, 156, 247); 
+   background-image: linear-gradient(120deg, rgb(162, 156, 247), rgba(7, 3, 246, 0.475));
+   padding: 20px;
+}
+header {
+    background-color: rgba(7, 3, 246, 0.228);
+    color: rgb(1, 46, 85);
+}
+ul.navigate{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(7, 3, 246, 0.228);
+}
+ul.navigate li {
+    float: left;
+}
+ul.navigate li a {
+    display: flex;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: rgb(7, 2, 58);
+}
+ul.navigate li a:hover {
+    background-color: rgb(70, 58, 212);
+}
+img.head {
+border-radius: 50%;
+float: left;
+margin: auto;
+}
+.contain {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.picture {
+display: inline-block;
+padding: 0 40px;
+}
+img.picture {
+    border: 1px solid #11015f;
+    border-radius: 18px;
+    padding: 5px;
+    width: 150px;
+}
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+ul.product {
+    list-style: none;
+    color: #11015f;
+    font-family:'Times New Roman', Times, serif;
+}
+button, a.button{
+    background-color: rgb(178, 148, 247);
+    color: rgb(2, 2, 77);
+    box-shadow: inset;
+    text-align: center;
+    text-decoration:none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+footer {
+    background-color: rgba(7, 3, 246, 0.228);
+    color: #11015f;
+}
+.site {
+    padding: 60px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #11015f;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto
+}
+.footers {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.footer {
+    text-align: left;
+    align-items: end;
+    margin-bottom: 40px;
+}
+.socials {
+    gap: 30px;
+}
+.navigate {
+    color: #11015f;
+    font-size: 14px;
+}
+.copyright {
+    text-align: center;
+    color: #11015f;
+    font-size: 14px;
+    margin-top: 50px;
+}
+@media only screen and (min-width: 600px) {
+    header {grid-area: 1 / span 6;}
+    main {grid-area: 2 / span 1;}
+    footer {grid-area: 3 / span 6;}
+}
+@media only screen and (min-width: 768px) {
+    header {grid-area: 1 / span 6;}
+    main {grid-area: 2 / span 1;}
+    footer {grid-area: 3 / span 6;}
+}
+@media only screen and (min-width: 992px) {
+    header {grid-area: 1 / span 6;}
+    main {grid-area: 2 / span 1;}
+    footer {grid-area: 3 / span 6;}
+}

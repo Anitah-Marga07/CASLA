@@ -1,0 +1,134 @@
+body {
+   background-color: rgb(162, 156, 247); 
+   background-image: linear-gradient(120deg, rgb(162, 156, 247), rgba(7, 3, 246, 0.475));
+   padding: 20px;
+}
+header {
+    background-color: rgba(7, 3, 246, 0.228);
+    color: rgb(1, 46, 85);
+}
+ul.navigate{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(7, 3, 246, 0.228);
+}
+ul.navigate li {
+    float: right;
+}
+ul.navigate li a {
+    display: flex;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: rgb(7, 2, 58);
+}
+ul.navigate li a:hover {
+    background-color: rgb(70, 58, 212);
+}
+img.head {
+border-radius: 50%;
+margin: auto;
+}
+.contain {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+label {
+    display: block;
+    color: #1f1f1f;
+}
+span {
+    color: rgb(255, 0, 0);
+}
+form {
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 30px;
+  
+}
+input[type="text"], input[type="number"], input[type="email"], input[type="date"], input[type=tel], input[type=file],
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-top: 2px solid;
+  box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #1f026eac;
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: rgb(65, 1, 81);
+}
+input[type=file]:hover{
+    background-color: rgb(151, 130, 243);
+    cursor: pointer;
+}
+footer {
+ background-color: rgba(7, 3, 246, 0.228);
+}
+.site {
+    padding: 60px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto
+}
+.footers {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.footer {
+    text-align: left;
+    align-items: end;
+    margin-bottom: 40px;
+}
+.socials {
+    gap: 30px;
+}
+.navigate {
+    color: #222121;
+    font-size: 14px;
+}
+.copyright {
+    text-align: center;
+    color: #11015f;
+    font-size: 14px;
+    margin-top: 50px;
+}
+@media only screen and (min-width: 600px) {
+    header {grid-area: 1 / span 6;}
+    main {grid-area: 2 / span 1;}
+    footer {grid-area: 3 / span 6;}
+}
+@media only screen and (min-width: 768px) {
+    header {grid-area: 1 / span 6;}
+    main {grid-area: 2 / span 1;}
+    footer {grid-area: 3 / span 6;}
+}
+@media only screen and (min-width: 992px) {
+    header {grid-area: 1 / span 6;}
+    main {grid-area: 2 / span 1;}
+    footer {grid-area: 3 / span 6;}
+}
