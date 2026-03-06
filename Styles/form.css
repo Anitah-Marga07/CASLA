@@ -84,7 +84,8 @@ input[type=file]:hover{
     cursor: pointer;
 }
 footer {
- background-color: rgba(7, 3, 246, 0.228);
+ background-color: rgba(47, 43, 232, 0.228);
+ color: #11015f;
 }
 .site {
     padding: 60px 10px;
